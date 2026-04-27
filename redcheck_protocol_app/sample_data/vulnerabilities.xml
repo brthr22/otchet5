@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vulnerability_report>
+    <metadata>
+        <scan_type>Full Network Scan</scan_type>
+        <profile>Default Security Profile</profile>
+        <target_ip>192.168.1.10</target_ip>
+        <start_time>2024-01-15T09:00:00</start_time>
+        <end_time>2024-01-15T11:30:00</end_time>
+        <scanner_version>RedCheck Scanner 5.2.1</scanner_version>
+    </metadata>
+    <vulnerabilities>
+        <vulnerability id="VULN-001">
+            <cve>CVE-2024-21351</cve>
+            <title>Windows SmartScreen Security Feature Bypass</title>
+            <description>Microsoft Windows SmartScreen could be bypassed allowing execution of malicious content.</description>
+            <severity>High</severity>
+            <cvss_score>7.8</cvss_score>
+            <cvss_vector>CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H</cvss_vector>
+            <exploit>
+                <available>true</available>
+                <status>poc_available</status>
+            </exploit>
+            <affected_host>192.168.1.10</affected_host>
+            <solution>Install the latest security update from Microsoft.</solution>
+            <references>
+                <reference>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21351</reference>
+            </references>
+        </vulnerability>
+        <vulnerability id="VULN-002">
+            <cve>CVE-2024-20656</cve>
+            <title>Windows NTLM Elevation of Privilege</title>
+            <description>A local attacker could exploit this vulnerability to gain elevated privileges.</description>
+            <severity>Critical</severity>
+            <cvss_score>9.8</cvss_score>
+            <exploit>
+                <available>false</available>
+                <status>none</status>
+            </exploit>
+            <affected_host>192.168.1.10</affected_host>
+            <solution>Apply KB5034441 or later cumulative update.</solution>
+        </vulnerability>
+        <vulnerability id="VULN-003">
+            <cve>CVE-2023-36761</cve>
+            <title>Microsoft Office Remote Code Execution</title>
+            <description>Specially crafted Office documents could lead to remote code execution.</description>
+            <severity>Medium</severity>
+            <cvss_score>6.5</cvss_score>
+            <exploit>
+                <available>true</available>
+                <status>active_exploitation</status>
+            </exploit>
+            <affected_host>192.168.1.10</affected_host>
+            <solution>Update Microsoft Office to the latest version.</solution>
+        </vulnerability>
+        <vulnerability id="VULN-004">
+            <title>RDP Exposure to Internet</title>
+            <description>Remote Desktop Protocol (port 3389) is accessible and may be exposed to brute force attacks.</description>
+            <severity>Medium</severity>
+            <cvss_score>5.3</cvss_score>
+            <affected_host>192.168.1.10</affected_host>
+            <affected_port>3389</affected_port>
+            <affected_service>rdp</affected_service>
+            <solution>Restrict RDP access using firewall rules or use a VPN.</solution>
+        </vulnerability>
+        <vulnerability id="VULN-005">
+            <cve>CVE-2024-00001</cve>
+            <title>Information Disclosure via DNS</title>
+            <description>DNS server configuration allows zone transfers to unauthorized hosts.</description>
+            <severity>Low</severity>
+            <cvss_score>3.7</cvss_score>
+            <affected_host>192.168.1.10</affected_host>
+            <affected_port>53</affected_port>
+            <solution>Configure DNS to restrict zone transfers to authorized servers only.</solution>
+        </vulnerability>
+    </vulnerabilities>
+</vulnerability_report>
