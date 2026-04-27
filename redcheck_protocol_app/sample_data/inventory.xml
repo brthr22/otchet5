@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory>
+    <host>
+        <hostname>SRV-DC-01</hostname>
+        <ip>192.168.1.10</ip>
+        <os>
+            <name>Windows Server 2019</name>
+            <version>Datacenter Edition</version>
+            <architecture>x64</architecture>
+            <role>Domain Controller</role>
+        </os>
+        <hardware>
+            <cpu>Intel Xeon E5-2680 v4</cpu>
+            <ram>64 GB</ram>
+            <disk>2 TB SSD</disk>
+        </hardware>
+        <network>
+            <interface>
+                <name>Ethernet0</name>
+                <ip>192.168.1.10</ip>
+                <mask>255.255.255.0</mask>
+                <gateway>192.168.1.1</gateway>
+                <dns>192.168.1.10, 192.168.1.11</dns>
+                <mac>00:1A:2B:3C:4D:5E</mac>
+            </interface>
+        </network>
+        <software>
+            <application>
+                <name>Microsoft Office 365</name>
+                <version>16.0.14326</version>
+                <installdate>2023-01-15</installdate>
+            </application>
+            <application>
+                <name>7-Zip</name>
+                <version>21.07</version>
+                <installdate>2023-02-20</installdate>
+            </application>
+        </software>
+        <updates>
+            <update><kb>KB5034441</kb></update>
+            <update><kb>KB5034232</kb></update>
+            <update><kb>KB5034123</kb></update>
+        </updates>
+        <users>
+            <user>
+                <name>Administrator</name>
+                <type>user</type>
+                <description>Built-in admin account</description>
+            </user>
+            <group>
+                <name>Domain Admins</name>
+                <type>group</type>
+                <description>Domain administrators group</description>
+            </group>
+        </users>
+        <services>
+            <service>
+                <name>Active Directory Domain Services</name>
+                <status>running</status>
+                <startup>auto</startup>
+            </service>
+            <service>
+                <name>DNS Server</name>
+                <status>running</status>
+                <startup>auto</startup>
+            </service>
+        </services>
+        <security>
+            <setting>
+                <name>Password Complexity</name>
+                <value>Enabled</value>
+            </setting>
+            <setting>
+                <name>Account Lockout</name>
+                <value>5 attempts</value>
+            </setting>
+        </security>
+    </host>
+</inventory>

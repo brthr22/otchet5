@@ -1,0 +1,35 @@
+2026-04-24 12:30:48,739 - __main__ - INFO - RedCheck Protocol Generator started
+2026-04-24 12:30:48,862 - doc_generator - INFO - Sample template created: template.docx
+2026-04-24 12:30:51,858 - __main__ - INFO - RedCheck Protocol Generator started
+2026-04-24 12:30:51,859 - parsers.inventory_parser - INFO - Parsed 1 host(s) from sample_data/inventory.xml
+2026-04-24 12:30:51,859 - __main__ - INFO - Parsed inventory: SRV-DC-01
+2026-04-24 12:30:51,860 - parsers.pentest_parser - INFO - Parsed 1 port scan(s) from sample_data/pentest.xml
+2026-04-24 12:30:51,860 - __main__ - INFO - Parsed pentest: 8 ports
+2026-04-24 12:30:51,860 - parsers.vulnerability_parser - INFO - Parsed 5 vulnerability(ies) from sample_data/vulnerabilities.xml
+2026-04-24 12:30:51,861 - __main__ - INFO - Parsed vulnerabilities: 5 items
+2026-04-24 12:30:51,895 - doc_generator - INFO - Loaded template: template.docx
+2026-04-24 12:30:51,895 - doc_generator - INFO - Processing host 1/1
+2026-04-24 12:30:51,944 - doc_generator - INFO - Document saved: output_test.docx
+2026-04-24 12:30:51,944 - __main__ - INFO - Document generated: output_test.docx
+2026-04-24 12:31:15,000 - __main__ - INFO - RedCheck Protocol Generator started
+2026-04-24 12:31:15,001 - parsers.inventory_parser - INFO - Parsed 1 host(s) from sample_data/inventory.xml
+2026-04-24 12:31:15,001 - __main__ - INFO - Parsed inventory: SRV-DC-01
+2026-04-24 12:31:15,002 - parsers.pentest_parser - INFO - Parsed 1 port scan(s) from sample_data/pentest.xml
+2026-04-24 12:31:15,002 - __main__ - INFO - Parsed pentest: 8 ports
+2026-04-24 12:31:15,002 - parsers.vulnerability_parser - INFO - Parsed 5 vulnerability(ies) from sample_data/vulnerabilities.xml
+2026-04-24 12:31:15,002 - __main__ - INFO - Parsed vulnerabilities: 5 items
+2026-04-24 12:31:15,036 - doc_generator - INFO - Loaded template: template.docx
+2026-04-24 12:31:15,036 - doc_generator - INFO - Processing host 1/1
+2026-04-24 12:31:15,096 - doc_generator - INFO - Document saved: output_test2.docx
+2026-04-24 12:31:15,096 - __main__ - INFO - Document generated: output_test2.docx
+2026-04-24 12:31:50,262 - __main__ - INFO - RedCheck Protocol Generator started
+2026-04-24 12:31:50,262 - parsers.inventory_parser - INFO - Parsed 1 host(s) from sample_data/inventory.xml
+2026-04-24 12:31:50,263 - __main__ - INFO - Parsed inventory: SRV-DC-01
+2026-04-24 12:31:50,263 - parsers.pentest_parser - INFO - Parsed 1 port scan(s) from sample_data/pentest.xml
+2026-04-24 12:31:50,263 - __main__ - INFO - Parsed pentest: 8 ports
+2026-04-24 12:31:50,264 - parsers.vulnerability_parser - INFO - Parsed 5 vulnerability(ies) from sample_data/vulnerabilities.xml
+2026-04-24 12:31:50,264 - __main__ - INFO - Parsed vulnerabilities: 5 items
+2026-04-24 12:31:50,304 - doc_generator - INFO - Loaded template: template.docx
+2026-04-24 12:31:50,304 - doc_generator - INFO - Processing host 1/1
+2026-04-24 12:31:50,382 - doc_generator - INFO - Document saved: output_final.docx
+2026-04-24 12:31:50,382 - __main__ - INFO - Document generated: output_final.docx
